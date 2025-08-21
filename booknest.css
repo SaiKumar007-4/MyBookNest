@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: "Roboto";
+
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #795C34;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  color: #4e342e;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.sidebar-heading{
+  font-size: 30px;
+  fon-weight: bold;
+  color: #f2f3f4;
+}
+.nav-categories h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family:"Roboto"
+  color: white;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.category-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-family:"Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color;
+}
+
+.category-item:hover {
+  background-color: #c7b299;
+  color: #3e2723;
+}
+
+.main-content {
+  margin-left: 350px;
+  padding: 30px;
+  width: calc(100% - 350px);
+  margin-left: 290px;
+  color:#3e2723;
+  background-color: #fffdd0;
+  background-size: cover;
+  overflow-x: auto;
+}
+
+/* Overall hero/banner section */
+.hero {
+  background: linear-gradient(135deg, #f9f6f1, #d2b48c);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+/* Header text */
+.hero h2 {
+  font-size: 2rem;
+  font-family: "oblique";
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #696969;
+  margin-bottom: 1.5rem;
+}
+
+/* Shelf strip styling */
+.shelf-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Chip styles (book titles) */
+.list {
+  background-color: white;
+  color: black;
+  font-family: "Italic";
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.list:hover {
+  background-color: #9A7B4F;
+  transform: translateY(-5px);
+}
+
+
+/* General section layout */
+#books {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  color: #333;
+}
+
+#books h3 {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+}
+
+/* Grid layout for book cards */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  mix-width: 100%;
+
+}
+
+/* Individual card styling */
+.card {
+  background-color: #9A7B4F;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(1, 1, 1, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+@media (max-width: 992px) {
+  .card {
+    width: 45%; /* 2 per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* 1 per row on small screens */
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid black;
+}
+
+/* Image section */
+.outline {
+  background-color: #e4e4e4;
+  padding: 30px;
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+
+}
+
+.fig {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Content section */
+.card-content {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-family: "Italic";
+  font-weight: 500;
+  margin: 0.3rem 0;
+  color: black;
+}
+
+.author {
+  font-size: 0.95rem;
+  font-family:"Roboto";
+  color: white;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* Genre tags */
+.genre-tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #cbcbcb;
+  color: black;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+/* Star rating visual (simple) */
+.stars::before {
+  content: "\2B50 \2B50 \2B50 \2B50 \2B50";
+  letter-spacing: 2px;
+  font-size: 16px;
+  background: linear-gradient(90deg, gold calc(var(--rating) / 5 * 100%), #a9a9a9 calc(var(--rating) / 5 * 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide popover by default */
+.card .popover {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  margin-top: 10px;
+  color: white;
+  background: black;
+  padding: 1rem;
+  border: 1px solid none;
+  border-radius: 6px;
+  font-style: italic;
+  font-size: 12px;
+
+}
+
+/* Show popover on hover or focus inside */
+.card:hover .popover{
+  display: block;
+}
+
+.recommended{
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+.re-heading{
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin: 8px;
+}
+.recommended-grid{
+    display: flex;
+    background-color: #c19a6b;
+    flex-wrap: nowrap;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1.5rem;
+    overflow-x: auto;
+    margin: 10px;
+
+}
+.recommended-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff8dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(1, 1, 1, 1);
+    overflow: hidden;
+    padding: 25px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+.recommended-card:hover{
+ transform: translateY(-10px);
+}
+.recommended-outline{
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+    border-radius:10px;
+    margin-right: 10px;
+
+}
+.book-cover {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOKNest</title>
+    <link rel="stylesheet" href="booknest.css">
+    <link href="" rel="stylesheet">
+</head>
+<body>
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <h1 class="sidebar-heading">BOOKNest</h1>
+    </div>
+    <nav class="nav-categories">
+        <h2>Categories</h2>
+        <div class="category-item">All Books</div>
+        <div class="category-item">Fiction</div>
+        <div class="category-item">Non-Fiction</div>
+        <div class="category-item">Self-Help</div>
+        <div class="category-item">Tech</div>
+        <div class="category-item">History</div>
+    </nav>
+</aside>
+
+<main class="main-content">
+    <header class="hero" role="banner" aria-labelledby="welcome">
+        <div>
+            <h1 id="welcome">Welcome back, Reader </h1>
+            <p>Here’s your current reading list. Pick up where you left off or browse fresh shelves.</p>
+            <div class="shelf-strip" role="list" aria-label="Current reads">
+                <span class="list" role="listitem">When Breath Becomes Air</span>
+                <span class="list" role="listitem">Atomic Habits</span>
+                <span class="list" role="listitem">The Shallows: What the Internet is Doing</span>
+                <span class="list" role="listitem">The Passage of Power</span>
+                <span class="list" role="listitem">This Is How They Tell Me the World Ends</span>
+            </div>
+        </div>
+    </header>
+    <section class="" id="books" aria-labelledby="books-grid-heading">
+        <h3 id="books-grid-heading">My Shelf</h3>
+        <div class="grid" role="list" aria-label="Cards grid">
+            <article class="card" role="article" aria-labelledby="t1-title" >
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t1-pop">
+                        <img src="https://www.inspireuplift.com/resizer/?image=https://cdn.inspireuplift.com/uploads/images/seller_products/1699927538_TheGirlwiththeDragonTattoo.jpg&width=600&height=600&quality=90&format=auto&fit=pad"
+                             alt="Placeholder cover for 'The Girl with the Dragon Tattoo'"/>
+                        <figcaption class="fig">The Girl with the Dragon Tattoo cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t1-title">The Girl with the Dragon Tattoo</h4>
+                    <p class="author">Stieg Larsson</p>
+                    <div class="author" aria-label="Rating: 4.1 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.1" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Fiction</span>
+                        <span class="tag">Thriller</span>
+                    </div>
+                </div>
+                <div class="popover" id="t1-pop" role="note">"4.1/5. Dark, gripping, twists, iconic character." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t2-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t2-pop">
+                        <img src="https://i.etsystatic.com/34040372/r/il/b0daa1/3613654220/il_fullxfull.3613654220_h006.jpg"
+                             alt="Placeholder cover for 'The Power of Habit'"/>
+                        <figcaption class="fig">The Power of Habit cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t2-title">The Power of Habit</h4>
+                    <p class="author">Charles Duhigg</p>
+                    <div class="author" aria-label="Rating: 4.1 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.1" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">Psychology</span>
+                    </div>
+                </div>
+                <div class="popover" id="t2-pop" role="note">"4.1/5. Business/life habits, science-backed." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t3-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t3-pop">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/66/TPON_Cover_LG.jpg" alt="Placeholder cover for 'The Power of Now'"/>
+                        <figcaption class="fig">The Power of Now cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t3-title">The Power of Now</h4>
+                    <p class="author">Eckhart Tolle</p>
+                    <div class="author" aria-label="Rating: 4.2 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.2" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Self-help</span>
+                        <span class="tag">Spiritual</span>
+                    </div>
+                </div>
+                <div class="popover" id="t3-pop" role="note">"4.2/5. Mindfulness, present-focused." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t4-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t4-pop">
+                        <img src="https://msftstories.thesourcemediaassets.com/sites/358/2021/08/MicrosoftTeams-image-1-1024x1024.png" alt="Placeholder cover for 'Tools and Weapons'"/>
+                        <figcaption class="fig">Tools and Weapons cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t4-title">Tools and Weapons</h4>
+                    <p class="author">Brad Smith</p>
+                    <div class="author" aria-label="Rating: 4.1 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.1" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Tech</span>
+                        <span class="tag">Business</span>
+                    </div>
+                </div>
+                <div class="popover" id="t4-pop" role="note">"4.1/5. Microsoft president’s insights." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t5-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t5-pop">
+                        <img src="https://rarebookcellar.cdn.bibliopolis.com/pictures/319303.jpg?auto=webp&v=1729028222" alt="Placeholder cover for 'Unbroken'"/>
+                        <figcaption class="fig">Unbroken cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t5-title">Unbroken</h4>
+                    <p class="author">Laura Hillenbrand</p>
+                    <div class="author" aria-label="Rating: 4.39 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.39" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">History</span>
+                        <span class="tag">WWII Biography</span>
+                    </div>
+                </div>
+                <div class="popover" id="t5-pop" role="note">"4.3/5. 	Heroic, astonishing survival." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t6-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t6-pop">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483381197i/32510570.jpg" alt="Placeholder cover for 'You Don’t Know Me'"/>
+                        <figcaption class="fig">You Don’t Know Me cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t6-title">You Don’t Know Me</h4>
+                    <p class="author">Imran Mahmood</p>
+                    <div class="author" aria-label="Rating: 4.02 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.02" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Fiction</span>
+                        <span class="tag">Thriller</span>
+                    </div>
+                </div>
+                <div class="popover" id="t6-pop" role="note">"4/5. Gritty, intense, societal prejudice." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t7-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t7-pop">
+                        <img src="https://rukminim2.flixcart.com/image/704/844/xif0q/book/r/x/j/steve-jobs-original-imahdnnxwgzh6wzt.jpeg?q=90&crop=false" alt="Placeholder cover for 'Steve Jobs'"/>
+                        <figcaption class="fig">Steve Jobs cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t7-title">Steve Jobs</h4>
+                    <p class="author">Walter Isaacson</p>
+                    <div class="author" aria-label="Rating: 4.19 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.19" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Tech</span>
+                        <span class="tag">Biography</span>
+                    </div>
+                </div>
+                <div class="popover" id="t7-pop" role="note">"4.1/5. 	Insightful, energetic, innovation." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t8-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t8-pop">
+                        <img src="https://www.environmentandsociety.org/sites/default/files/diamond_guns_germs_steel.jpg" alt="Placeholder cover for 'Guns, Germs, and Steel'"/>
+                        <figcaption class="fig">Guns, Germs, and Steel cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t8-title">Guns, Germs, and Steel</h4>
+                    <p class="author">Jared Diamond</p>
+                    <div class="author" aria-label="Rating: 3.88 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:3.88" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">Science</span>
+                    </div>
+                </div>
+                <div class="popover" id="t8-pop" role="note">"3.5/5. 	Landmark, deep dives into civilization." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t9-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t9-pop">
+                        <img src="https://rukminim2.flixcart.com/image/704/844/book/2/7/9/night-by-elie-wiesel-original-imad9xvwhykqhbjc.jpeg?q=90&crop=false" alt="Placeholder cover for 'Night'"/>
+                        <figcaption class="fig">Night cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t9-title">Night</h4>
+                    <p class="author">Elie Wiesel</p>
+                    <div class="author" aria-label="Rating: 4.38 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.38" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">History</span>
+                        <span class="tag">Holocaust</span>
+                    </div>
+                </div>
+                <div class="popover" id="t9-pop" role="note">"4.3/5. Important, haunting memoir." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t10-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t10-pop">
+                        <img src="https://lorigottlieb.com/wp-content/uploads/2020/03/maybeyoushouldtalk-nyt.png" alt="Placeholder cover for 'Maybe You Should Talk to Someone'"/>
+                        <figcaption class="fig">Maybe You Should Talk to Someone cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t10-title">Maybe You Should Talk to Someone</h4>
+                    <p class="author">Lori Gottlieb</p>
+                    <div class="author" aria-label="Rating: 4.36 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.36" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Self-Help</span>
+                        <span class="tag">Memoir/Psych</span>
+                    </div>
+                </div>
+                <div class="popover" id="t10-pop" role="note">"4.3/5. Therapist’s insights, touching, honest." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t11-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t11-pop">
+                        <img src="https://static01.nyt.com/images/2013/10/08/arts/BOOK/BOOK-superJumbo.jpg" alt="Placeholder cover for 'The Goldfinch'"/>
+                        <figcaption class="fig">The Goldfinch cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t11-title">The Goldfinch</h4>
+                    <p class="author">Donna Tartt</p>
+                    <div class="author" aria-label="Rating: 3.91 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:3.91" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Fiction</span>
+                        <span class="tag">Mystery</span>
+                    </div>
+                </div>
+                <div class="popover" id="t11-pop" role="note">"	3.9/5. Pulitzer-winning, art and crime." - Reader review</div>
+            </article>
+
+            <article class="card" role="article" aria-labelledby="t12-title">
+                <div class="outline">
+                    <figure class="photo" tabindex="0" aria-describedby="t12-pop">
+                        <img src="https://res.cloudinary.com/itimages/image/upload/f_auto,q_auto,w_800,c_limit/prd/splash_cover_art/kyn8yq3yfsmzkkbxxnvc" alt="Placeholder cover for 'Becoming'"/>
+                        <figcaption class="fig">Becoming cover placeholder</figcaption>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h4 class="title" id="t12-title">Becoming</h4>
+                    <p class="author">Michelle Obama</p>
+                    <div class="author" aria-label="Rating: 4.54 out of 5 stars">
+                        <span class="fig">Rating:</span>
+                        <span class="stars" style="--rating:4.54" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">Memoir</span>
+                    </div>
+                </div>
+                <div class="popover" id="t12-pop" role="note">"4.5/5. Powerful, inspiring." - Reader review</div>
+            </article>
+        </div>
+    </section>
+
+    <section class="recommended" aria-labelledby="recommended-heading">
+        <h5 id="recommended-heading" class="re-heading">Recommended Reads</h5>
+        <div class="recommended-grid" role="list" aria-labelledby="Recommended Books To Read">
+            <article class="recommended-card" role="article" aria-labelledby="b1">
+                <img src="https://cdn.theatlantic.com/thumbor/Yzb9Cnagznat5AwrVFO73wGIUTw=/0x833:1837x2670/1080x1080/media/img/2018/02/CULT_C2C_Educated/original.jpg" alt="Book cover of Educated" class="book-cover" />
+                <div>
+                    <h6 id="b1" class="title">Educated</h6>
+                    <div class="author" aria-label="Rating: 4.47 out of 5 stars">
+                        <span class="stars" style="--rating:4.47" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">Memoir</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="recommended-card" role="article" aria-labelledby="b2">
+                <img src="https://rukminim2.flixcart.com/image/704/844/kqjtd3k0/book/0/s/p/think-grow-rich-original-imag4jgm75ravh7f.jpeg?q=90&crop=false" alt="Book cover of Educated" class="book-cover" />
+                <div>
+                    <h6 id="b2" class="title">Think and Grow Rich</h6>
+                    <div class="author" aria-label="Rating: 4.17 out of 5 stars">
+                        <span class="stars" style="--rating:4.17" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Self-help</span>
+                        <span class="tag">Success</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="recommended-card" role="article" aria-labelledby="b3">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681839850i/21853621.jpg" alt="Book cover of Educated" class="book-cover" />
+                <div>
+                    <h6 id="b3" class="title">The Nightingale</h6>
+                    <div class="author" aria-label="Rating: 4.58 out of 5 stars">
+                        <span class="stars" style="--rating:4.58" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Fiction</span>
+                        <span class="tag">Historical</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="recommended-card" role="article" aria-labelledby="b4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Gone_with_the_Wind_%281936%2C_first_edition_cover%29.jpg/960px-Gone_with_the_Wind_%281936%2C_first_edition_cover%29.jpg" alt="Book cover of Educated" class="book-cover" />
+                <div>
+                    <h6 id="b4" class="title">Gone with the Wind</h6>
+                    <div class="author" aria-label="Rating: 4.30 out of 5 stars">
+                        <span class="stars" style="--rating:4.30" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">History</span>
+                        <span class="tag">Civil War Fic</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="recommended-card" role="article" aria-labelledby="b5">
+                <img src="https://bauerrarebooks.cdn.bibliopolis.com/pictures/3113.jpg?auto=webp&v=1468256453" alt="Book cover of Educated" class="book-cover" />
+                <div>
+                    <h6 id="b5" class="title">In Cold Blood</h6>
+                    <div class="author" aria-label="Rating: 4.06 out of 5 stars">
+                        <span class="stars" style="--rating:4.06" aria-hidden="true"></span>
+                    </div>
+                    <div class="genre-tags" aria-label="Genres">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">True Crime</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+</body>
+</html>
